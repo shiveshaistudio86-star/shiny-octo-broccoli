@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Horizon — Predicting the Next Frontiers in AI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">AI Horizon</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="labs.html">AI Labs</a>
+        <a href="#predictions">Predictions</a>
+        <a href="#subscribe">Subscribe</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h2>Gaze forward. Predict the impossible.</h2>
+          <p class="lead">AI Horizon forecasts upcoming milestones in artificial intelligence and hosts experimental labs exploring the next breakthroughs — from efficient models to embodied agents and safety-first systems.</p>
+          <div class="cta-row">
+            <button id="generateBtn" class="btn primary">Generate Predictions</button>
+            <a class="btn ghost" href="labs.html">Explore AI Labs</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <div class="holo">
+            <code id="samplePrediction">Realtime multimodal reasoning at edge-scale</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="predictions" class="predictions section container">
+      <h3>Predicted Milestones</h3>
+      <p class="muted">A living set of short-, mid-, and long-term forecasts created by our prediction engine and curated research.</p>
+      <div id="predictionsGrid" class="grid">
+        <!-- JS will populate cards -->
+      </div>
+    </section>
+
+    <section id="labs" class="labs section container">
+      <h3>AI Labs</h3>
+      <p class="muted">Hands-on projects and experiments that test and prototype the milestones we predict.</p>
+      <div class="grid small">
+        <article class="lab-card">
+          <h4>ModelBench</h4>
+          <p>Benchmarking next-gen architectures for reasoning, efficiency, and safety.</p>
+        </article>
+        <article class="lab-card">
+          <h4>Embodiment Lab</h4>
+          <p>Bridges perception, control, and language for embodied agents.</p>
+        </article>
+        <article class="lab-card">
+          <h4>HumanLoop</h4>
+          <p>Large-scale human feedback systems and alignment experiments.</p>
+        </article>
+        <article class="lab-card">
+          <h4>Frontier Hardware</h4>
+          <p>Optimizing hardware-software co-design for low-power on-device AI.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="subscribe" class="subscribe section container">
+      <h3>Stay on the Horizon</h3>
+      <form id="subscribeForm" class="subscribe-form" autocomplete="off">
+        <input id="email" type="email" placeholder="you@future.ai" required />
+        <button class="btn primary" type="submit">Subscribe</button>
+      </form>
+      <p id="subMessage" class="muted small"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© AI Horizon — predictive lab for the future of AI</small>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
